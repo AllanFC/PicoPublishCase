@@ -1,0 +1,18 @@
+﻿@model MVC.Models.AddProductViewModel
+@{
+    ViewData["Title"] = "Indsæt produkt";
+}
+
+<h2>Indsæt produkt</h2>
+
+<form method="post" action="Add" class="mt-5">
+    <div class="form-floating mb-3">
+        <textarea class="form-control" asp-for="Name" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Navn</label>
+    </div>
+    <div class="form-floating mb-3">
+        <textarea class="form-control" asp-for="Description" id="floatingTextarea" style="height: 100px"></textarea>
+        <label for="floatingTextarea">Beskrivelse</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,20 @@
+﻿@model MVC.Models.Domain.Product
+@{
+    ViewData["Title"] = "Rediger produkt";
+}
+
+<h2>Rediger produkt</h2>
+
+<form method="post" action="Add" class="mt-5">
+    <input type="hidden" id="ProductId" asp-for="Id"/>
+    <div class="form-floating mb-3">
+        <textarea class="form-control" asp-for="Name" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Navn</label>
+    </div>
+    <div class="form-floating mb-3">
+        <textarea class="form-control" asp-for="Description" placeholder="Produktbeskrivelse" id="floatingTextarea" style="height: 100px"></textarea>
+        <label for="floatingTextarea">Beskrivelse</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Gem</button>
+    <a href="/Products/Index" class="btn btn-outline-danger">Tilbage</a>
+</form>
