@@ -8,6 +8,5 @@
 - [x] Edit products
 - [x] Delete products
 
-Data storage done with SQL
-to run change connection string in "appsettings.json"
+Data storage done with SQL to run change connection string in "appsettings.json"
 Run "update-datebase" in PM console
